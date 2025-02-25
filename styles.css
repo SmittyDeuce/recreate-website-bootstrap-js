@@ -1,4 +1,12 @@
+body, html {
+  height: 100%;
+  margin: 0; /* Removes default margin from body */
+}
+
+/* Flexbox to make footer stick to the bottom */
 body {
+  display: flex;
+  flex-direction: column;
   background-image: linear-gradient(45deg, #004a7b, #686c75, #0d81bc);
   background-size: cover;
   background-repeat: no-repeat; /* Prevents any tiling/repeating */
@@ -6,12 +14,42 @@ body {
   color: #d3d3d3;
 }
 
-#intro {
-    font-size: 22px;
-    color: black;
-    line-height: 2em;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Center vertically */
+  align-items: center;      /* Center horizontally */
+  flex-grow: 1; /* Ensures content takes available space */
+  text-align: center; /* Aligns text in the middle */
 }
 
-hr {
-    color: black;
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+}
+
+#intro {
+  color: black;
+  line-height: 2em;
+}
+
+main {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adds space between images */
+  margin-top: 20px; /* Adds space between the text and the images */
 }
