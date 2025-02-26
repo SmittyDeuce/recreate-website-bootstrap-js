@@ -22,8 +22,7 @@
   <body>
     <header>
       <div class="text-center mt-3 mb-4">
-        <h1>Alton Smith II</h1>
-        <p class="lead">Software Engineer</p>
+        <h1>Contact</h1>
       </div>
 
       <nav
@@ -49,12 +48,12 @@
           >
             <ul class="navbar-nav d-flex w-100 justify-content-around">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+                <a class="nav-link" href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-linkactive" aria-current="page" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -66,39 +65,34 @@
     </header>
 
     <main>
-      <div class="container-md mt-3 text-center">
-        <p id="intro">
-          "Pleased to make your acquaintance! I'm Alton (pronounced 'Al-Ten')
-          Smith II—though some friends call me 'Smith' or 'Smitty,' and I'm good
-          with any of the three. I'm currently studying at Coding Temple with
-          plans to specialize in backend development. While I haven't yet
-          dedicated myself to mastering a specific language, I'm excited about
-          the possibilities ahead and dream of tackling Rust one day. I love
-          learning—especially in today's world, where knowledge is just a quick
-          Google search or YouTube video away. If I can spend just an hour a day
-          learning something new, then I'm already better than I was yesterday."
-        </p>
-      </div>
-      <div class="image-container p-0">
-        <img
-          class="rounded-circle"
-          src="baby-picture.jpeg"
-          alt="my picture as a kid"
-        />
-        <img
-          class="rounded-circle"
-          src="recent-photo.jpeg"
-          alt="my most recent photo"
-        />
-      </div>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="form-label" for="firstname">First Name</label>
+                    <input class="form-control" type="text" name="firstname" id="firstname" required placeholder="First name">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="lastname">Last Name</label>
+                    <input class="form-control" type="text" name="lastname" id="lastname" required placeholder="Last name">
+                </div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+            </div>
+            <div class="form-group mt-3">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-control" name="message" id="message" placeholder="Enter message" required></textarea>
+            </div>
+
+            <button type="submit" class="mt-3 btn btn-primary">Submit</button>
+          </form>
     </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
-      <p>
-        &copy; 2025 Alton Smith II |
-        <a href="smithiialton@gmail.com" class="text-white">Email Me</a>
-      </p>
+      <p>&copy; 2025 Alton Smith II | <a href="smithiialton@gmail.com" class="text-white">Email Me</a></p>
     </footer>
 
     <!-- Bootstrap JavaScript Libraries -->

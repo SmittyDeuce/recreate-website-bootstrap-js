@@ -1,0 +1,27 @@
+/* Flexbox to make footer stick to the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(45deg, #004a7b, #686c75, #0d81bc);
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevents any tiling/repeating */
+  min-height: 100vh;
+  color: #d3d3d3;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  flex-grow: 1; /* Ensures content takes available space */
+  text-align: center; /* Aligns text in the middle */
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+}
+
