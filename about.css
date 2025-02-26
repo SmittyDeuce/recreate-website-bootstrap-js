@@ -13,7 +13,6 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
   flex-grow: 1; /* Ensures content takes available space */
   text-align: center; /* Aligns text in the middle */
@@ -24,4 +23,6 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: #343a40;
+  text-align: center;
 }
+

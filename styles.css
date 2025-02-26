@@ -21,6 +21,7 @@ main {
   align-items: center;      /* Center horizontally */
   flex-grow: 1; /* Ensures content takes available space */
   text-align: center; /* Aligns text in the middle */
+  font-family: 'Times New Roman', Times, serif;
 }
 
 footer {
@@ -51,5 +52,16 @@ img {
   justify-content: center;
   align-items: center;
   gap: 20px; /* Adds space between images */
-  margin-top: 20px; /* Adds space between the text and the images */
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #intro {
+    font-size: 18px;
+  }
 }
