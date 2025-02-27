@@ -12,6 +12,9 @@ body {
   background-repeat: no-repeat; /* Prevents any tiling/repeating */
   min-height: 100vh;
   color: #d3d3d3;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+
 }
 
 main {
@@ -21,7 +24,6 @@ main {
   align-items: center;      /* Center horizontally */
   flex-grow: 1; /* Ensures content takes available space */
   text-align: center; /* Aligns text in the middle */
-  font-family: 'Times New Roman', Times, serif;
 }
 
 footer {
@@ -36,10 +38,6 @@ footer {
   line-height: 2em;
 }
 
-main {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
-}
 
 img {
   height: 200px;
